@@ -98,12 +98,6 @@ namespace WhatsAppSender {
             return;
             case 2:
             this.ContactButton = ((System.Windows.Controls.Button)(target));
-            
-            #line 22 "..\..\MainWindow.xaml"
-            this.ContactButton.Click += new System.Windows.RoutedEventHandler(this.ContactButton_Click);
-            
-            #line default
-            #line hidden
             return;
             case 3:
             this.SendButton = ((System.Windows.Controls.Button)(target));

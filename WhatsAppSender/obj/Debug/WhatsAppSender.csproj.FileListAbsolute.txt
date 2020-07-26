@@ -1,1 +1,13 @@
 F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\WhatsAppSender.exe.config
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\WhatsAppSender.exe
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\WhatsAppSender.pdb
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender.csprojResolveAssemblyReference.cache
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\App.g.cs
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender_MarkupCompile.cache
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender.g.resources
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender.Properties.Resources.resources
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender.csproj.GenerateResource.Cache
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender.exe
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender.pdb
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\MainWindow.baml
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\MainWindow.g.cs
