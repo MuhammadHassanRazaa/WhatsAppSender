@@ -12,6 +12,7 @@ Exceptions are not handled properly. It won't continue if any single invalid pho
  - Betterment of UI
 
 ## Usage
+While Logging in please check "Remeber me"
 
 You need to have a text file with all your contact (separated by line) in following format
 ```
@@ -22,7 +23,7 @@ Don't Use this format
 ```
 +001-(XXX)XXXXXXX
 ```
-
+Don't Forget to logout manually from your phone.
 ## Contributing
 Pull requests are welcome. 
 
