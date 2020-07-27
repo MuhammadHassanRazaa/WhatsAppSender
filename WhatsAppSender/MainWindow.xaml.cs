@@ -76,7 +76,7 @@ namespace WhatsAppSender
         {
             if (!String.IsNullOrEmpty(messageBox.Text.Trim()))
             {
-                String message = WebUtility.HtmlEncode(messageBox.Text);
+                String message = Uri.EscapeDataString(messageBox.Text);
                 ChromeDriver driver = new ChromeDriver();
                 driver.Navigate().GoToUrl("https://web.whatsapp.com/");
 
