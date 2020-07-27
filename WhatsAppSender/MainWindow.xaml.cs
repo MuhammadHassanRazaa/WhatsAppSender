@@ -38,7 +38,7 @@ namespace WhatsAppSender
         private void ContactButton_Click(object sender, RoutedEventArgs e)
         {
 
-            String[] contactFileData=null;
+            String[] contactFileData = null;
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.AddExtension = true;
             ofd.CheckFileExists = true;
@@ -74,34 +74,34 @@ namespace WhatsAppSender
         }
         private void SendButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!String.IsNullOrEmpty(messageBox.Text.Trim())) { 
-            
+            if (!String.IsNullOrEmpty(messageBox.Text.Trim()))
+            {
+                String message = WebUtility.HtmlEncode(messageBox.Text);
                 ChromeDriver driver = new ChromeDriver();
                 driver.Navigate().GoToUrl("https://web.whatsapp.com/");
-                String message = WebUtility.HtmlEncode(messageBox.Text);
-               
-                
+
                 Thread.Sleep(10000);
                 foreach (Contact i in contacts)
                 {
-                    try{
-		                driver.ExecuteScript("window.open('');");
+                    try
+                    {
+                        driver.ExecuteScript("window.open('');");
                         driver.SwitchTo().Window(driver.WindowHandles[1]);
-                        driver.Navigate().GoToUrl("https://web.whatsapp.com/send?phone="+i.ContactNumber+"&text="+message+"&source&data&app_absent");
-                  
+                        driver.Navigate().GoToUrl("https://web.whatsapp.com/send?phone=" + i.ContactNumber + "&text=" + message + "&source&data&app_absent");
+
                         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(100));
-                     
+
                         wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.ClassName("_1U1xa"))).Click();
-                       
+
                         driver.Close();
                         driver.SwitchTo().Window(driver.WindowHandles[0]);
-                       
-                    }
-                    catch(Exception){}
 
-               }
-                
-                
+                    }
+                    catch (Exception) { }
+
+                }
+
+
                 driver.Quit();
                 MessageBox.Show("Done Sending All Messages");
                 messageBox.Clear();
