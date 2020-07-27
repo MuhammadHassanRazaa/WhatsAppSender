@@ -8,6 +8,10 @@ namespace WhatsAppSender.Model
 {
     class Contact
     {
+        public Contact(long number)
+        {
+            this.contactNumber = number;
+        }
         private long contactNumber;
 
         public long ContactNumber

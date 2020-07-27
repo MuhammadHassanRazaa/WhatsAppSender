@@ -11,3 +11,8 @@ F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppS
 F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\WhatsAppSender.pdb
 F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\MainWindow.baml
 F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\obj\Debug\MainWindow.g.cs
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\WebDriver.dll
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\WebDriver.Support.dll
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\WebDriver.xml
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\WebDriver.Support.xml
+F:\coding\c #\projects\windows\WhatsAppSender\WhatsAppSender\bin\Debug\SeleniumExtras.WaitHelpers.dll
