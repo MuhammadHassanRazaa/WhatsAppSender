@@ -4,7 +4,7 @@ You can send messages to unlimited number of people through this project.
 
 ## Exceptions to be handled yet
 
-Exceptions are not handled properly. It won't continue if any single invalid phone number comes in between.
+Exceptions are not handled properly. 
 
 ## Things I'm Working on
 

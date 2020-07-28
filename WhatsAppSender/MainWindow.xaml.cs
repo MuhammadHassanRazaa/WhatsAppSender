@@ -88,12 +88,25 @@ namespace WhatsAppSender
                         driver.ExecuteScript("window.open('');");
                         driver.SwitchTo().Window(driver.WindowHandles[1]);
                         driver.Navigate().GoToUrl("https://web.whatsapp.com/send?phone=" + i.ContactNumber + "&text=" + message + "&source&data&app_absent");
+                       
+                        try
+                        {
+                            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
 
-                        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(100));
+                            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.ClassName("_1U1xa"))).Click();
+                                 
 
-                        wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.ClassName("_1U1xa"))).Click();
-
-                        driver.Close();
+                        }
+                        catch (TimeoutException)
+                        {
+                            driver.FindElementByCssSelector(".S7_rT.FV2Qy").Click();
+                        }
+                        for (int j = 1; j <driver.WindowHandles.Count; j++)
+                        {
+                            driver.SwitchTo().Window(driver.WindowHandles[j]);
+                            driver.Close();
+                        }
+                        
                         driver.SwitchTo().Window(driver.WindowHandles[0]);
 
                     }
