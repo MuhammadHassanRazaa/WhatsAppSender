@@ -1,4 +1,6 @@
 # Whatsapp Bulk Message Sender
+![GitHub](https://img.shields.io/github/license/nikhilmuz/WhatsApp-Bulk-Sender.svg)
+[![Platform](https://img.shields.io/badge/platform-Windows%7CChrome-yellow.svg)](https://www.microsoft.com/en-us/windows)
 
 You can send messages to unlimited number of people through this project.
 
@@ -12,7 +14,7 @@ Exceptions are not handled properly.
  - Betterment of UI
 
 ## Usage
-While Logging in please check "Remeber me"
+While Logging in please check "Keep me Signed In"
 
 You need to have a text file with all your contact (separated by line) in following format
 ```
