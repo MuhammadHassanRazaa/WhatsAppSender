@@ -1,5 +1,6 @@
 # Whatsapp Bulk Message Sender
-![GitHub](https://img.shields.io/github/license/nikhilmuz/WhatsApp-Bulk-Sender.svg)
+
+[![GitHub](https://img.shields.io/github/license/nikhilmuz/WhatsApp-Bulk-Sender.svg)](https://choosealicense.com/licenses/mit/)
 [![Platform](https://img.shields.io/badge/platform-Windows%7CChrome-yellow.svg)](https://www.microsoft.com/en-us/windows)
 
 You can send messages to unlimited number of people through this project.
