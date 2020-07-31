@@ -93,6 +93,7 @@ namespace WhatsAppSender
                         {
                             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
                             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.CssSelector(".S7_rT.FV2Qy"))).Click();
+                            output.AppendText(i.ContactNumber+" Invalid Phone Number\n");
                      
                         }
                         catch (Exception)
@@ -100,7 +101,7 @@ namespace WhatsAppSender
                             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(50));
 
                             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.ClassName("_1U1xa"))).Click();
-
+                            output.AppendText(i.ContactNumber + " Sent\n");
                         }
                         finally {
                             driver.SwitchTo().Window(driver.WindowHandles[1]);
@@ -112,7 +113,9 @@ namespace WhatsAppSender
                        
 
                     }
-                    catch (Exception) { }
+                    catch (Exception eb) {
+                        output.AppendText(i.ContactNumber + " Error: " + eb.Message + "\n");
+                    }
 
                 }
 

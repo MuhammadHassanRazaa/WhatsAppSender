@@ -9,7 +9,7 @@
         <Button x:Name="MessageButton"  HorizontalAlignment="Left" Margin="515,101,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="MessageButton_Click">
             <TextBlock Text="Upload Message File" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Width="101"/>
         </Button>
-        <Separator HorizontalAlignment="Left" Height="17" Margin="432,136,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.5,0.5">
+        <Separator HorizontalAlignment="Left" Height="17" Margin="361,206,0,0" VerticalAlignment="Top" Width="284" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,9 +22,18 @@
         <Button x:Name="ContactButton"  HorizontalAlignment="Left" Margin="515,159,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="ContactButton_Click">
             <TextBlock Text="Upload Contacts File" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Width="101"/>
         </Button>
-        <Button x:Name="SendButton"  HorizontalAlignment="Left" Margin="479,284,0,0" VerticalAlignment="Top" Width="147" Height="53" Click="SendButton_Click">
+        <Button x:Name="SendButton"  HorizontalAlignment="Left" Margin="515,284,0,0" VerticalAlignment="Top" Width="111" Height="53" Click="SendButton_Click">
             <TextBlock Text="Send Message" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="14" Width="101"/>
         </Button>
+
+        <RichTextBox x:Name="output" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True"  HorizontalAlignment="Left" Height="120" Margin="29,230,0,0" VerticalAlignment="Top" Width="465" FontFamily="Times New Roman" FontSize="14">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        
 
     </Grid>
 </Window>
